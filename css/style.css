@@ -1,0 +1,129 @@
+:root {
+    --theme-color:whitesmoke;
+    --navBar-color:#142738;
+    --background-color:#a8bbcd;
+    --primary-color:#142738;
+    --secundary-color:#a8bbcd;
+    --terceary-color:#d8e472;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+}
+a{
+    text-decoration: none;
+    color: var(--terceary-color);
+}
+/* HEADER */
+.header{
+    box-shadow: 0 5px 5px #142738;
+    position: fixed;
+    background:var(--navBar-color) ;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li{
+    padding: 0 30px;
+}
+.menu a{
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+.menu a::after{
+    content: "";
+    background-color: var(--terceary-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu a.selected::after,
+.menu a:hover::after {
+    opacity: 0.8;
+}
+
+
+.openMenu, .closeMenu {
+    display: none;
+}
+
+/* MOBILE FIRST */
+
+@media screen and (max-width:767px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--navBar-color);
+        height: 50vh;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        box-shadow: 0 3px 5px #142738;
+    }
+    
+    .menu li{
+        padding: 0;
+        line-height: 60px;
+    }
+
+    a{
+        color: var(--terceary-color);
+    }
+
+    .openMenu, .closeMenu {
+        display: block;
+        border: none;
+        background: none;
+    }
+
+    .openMenu img, .closeMenu img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .closeMenu {
+        align-self: flex-end;
+        padding: 20px;
+    }
+
+    .menuOpened {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
