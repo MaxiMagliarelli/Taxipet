@@ -1,7 +1,7 @@
 :root {
     --theme-color:whitesmoke;
     --navBar-color:#142738;
-    --background-color:#a8bbcd;
+    --background-color:#ffffff;
     --primary-color:#142738;
     --secundary-color:#a8bbcd;
     --terceary-color:#d8e472;
@@ -35,8 +35,8 @@ a{
     width: 80%;
 }
 .logo img{
-    width: 80px;
-    height: 80px;
+    width: auto;
+    height: 110px;
 }
 .menu {
     list-style-type: none;
@@ -67,11 +67,22 @@ a{
     opacity: 0.8;
 }
 
-
 .openMenu, .closeMenu {
     display: none;
 }
 
+h2 {
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+h3 {
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+strong {
+    color: #d8e472;
+}
 /* MOBILE FIRST */
 
 @media screen and (max-width:767px) {
@@ -96,34 +107,147 @@ a{
         transition: opacity 0.3s;
         box-shadow: 0 3px 5px #142738;
     }
-    
     .menu li{
         padding: 0;
         line-height: 60px;
     }
-
     a{
         color: var(--terceary-color);
     }
-
     .openMenu, .closeMenu {
         display: block;
         border: none;
         background: none;
     }
-
     .openMenu img, .closeMenu img {
         width: 40px;
         height: 40px;
     }
-
     .closeMenu {
         align-self: flex-end;
         padding: 20px;
     }
-
     .menuOpened {
         opacity: 1;
         pointer-events: all;
     }
+
+    /* MAIN - BANNER */
+    .banner {
+        background-image: url(/assets/banner.webp);
+        background-position-y: 80px;
+        height: 40vh;
+        background-size:cover;
+        display: flex;
+    }
+    .text-banner {
+        font-size: 0.8rem;
+        margin: 150px 220px 100px 20px;
+        text-align: center;
+        color: var(--primary-color);
+    }
+    .text-banner h1{
+        text-transform: uppercase;
+    }
+    .text-banner p{
+        padding: 10px;
+        font-weight: 600;
+    }
+    .btn-descargar-app {
+        margin: 30px;
+        background-color: #d8e472;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        box-shadow: 1px 1px 15px var(--terceary-color);
+    }
+    .btn-descargar-app a{
+        color: #142738;
+    }
+    
+    /* MAIN - NOSOTROS */
+
+    .container-nosotros{
+        background-color: var(--primary-color);
+        text-align: center;
+        color: var(--secundary-color);
+        padding: 10px;
+    }
+
+    .container-nosotros p {
+        font-size: 1.1rem;
+        padding:0 10px 10px;
+    }
+
+    /* MAIN - SERVICIOS */
+
+    .container-servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-servicios h2{
+        color: var(--primary-color);
+    }
+    .card {
+        color: var(--primary-color);
+        padding: 20px;
+        text-align: center;
+    }
+    .card img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .card h3 {
+        border-radius: 5px;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+    .card p {
+        font-weight: 700;
+    }
+    .btn-info {
+        text-transform: uppercase;
+        font-weight: 500;
+        background-color: var(--primary-color);
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px; 
+    }
+    /* MAIN - COMENTARIOS */
+
+    .container-comentarios {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        color: var(--secundary-color);
+        align-items: center;
+    }
+    .comentario {
+        width: 80%;
+        padding: 15px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .comentario p{
+        color: #d8e472;
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
