@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Condensed:wght@300&display=swap');
 :root {
     --theme-color:whitesmoke;
     --navBar-color:#142738;
@@ -13,7 +14,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Pangolin', cursive;
     background: var(--background-color);
 }
 a{
@@ -153,6 +154,19 @@ strong {
         padding: 10px;
         font-weight: 600;
     }
+    
+    /* MAIN - NOSOTROS */
+
+    .container-nosotros{
+        background-color: var(--primary-color);
+        text-align: center;
+        color: var(--secundary-color);
+        padding: 10px;
+    }
+    .container-nosotros p {
+        font-size: 1.1rem;
+        padding:0 10px 10px;
+    }
     .btn-descargar-app {
         margin: 30px;
         background-color: #d8e472;
@@ -165,21 +179,6 @@ strong {
     .btn-descargar-app a{
         color: #142738;
     }
-    
-    /* MAIN - NOSOTROS */
-
-    .container-nosotros{
-        background-color: var(--primary-color);
-        text-align: center;
-        color: var(--secundary-color);
-        padding: 10px;
-    }
-
-    .container-nosotros p {
-        font-size: 1.1rem;
-        padding:0 10px 10px;
-    }
-
     /* MAIN - SERVICIOS */
 
     .container-servicios {
@@ -189,6 +188,7 @@ strong {
     }
     .container-servicios h2{
         color: var(--primary-color);
+        margin-top: 15px;
     }
     .card {
         color: var(--primary-color);
@@ -206,7 +206,8 @@ strong {
         font-weight: bold;
     }
     .card p {
-        font-weight: 700;
+        font-weight: 500;
+        font-size: 1.1rem;
     }
     .btn-info {
         text-transform: uppercase;
@@ -226,22 +227,142 @@ strong {
         color: var(--secundary-color);
         align-items: center;
     }
+    .container-comentarios h2 {
+        color: var(--terceary-color);
+        margin-top: 15px;
+    }
     .comentario {
         width: 80%;
         padding: 15px;
         font-weight: 700;
         text-align: center;
     }
+    .comentario i{
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
     .comentario p{
         color: #d8e472;
         padding: 10px;
+        font-size: 1.2rem;
     }
 
+    /* MAIN - SEPARADOR */
 
+    .separador {
+        background-image: url(/assets/separador.png);
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 60vh;
+    }
 
+    /* MAIN - DESCARGA */
 
+    .container-descarga{
+        color: var(--primary-color);
+        background-color: var(--terceary-color);
+        text-align: center;
+        padding: 30px 10px;
+        box-shadow: 0px 5px 10px var(--terceary-color);
+    }
+    .container-descarga h3{
+        padding: 15px 0px;
+    }
+    .flex-container div{
+        padding: 10px;
+    }
+    .store img{
+        width: 150px;
+    }
 
+    /* MAIN - CONTACTO */
+    .container-contacto h2 {
+        margin-top: 20px;
+        color: var(--primary-color);
+    }
+    .container-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-group {
+        display: flex;
+        flex-direction: column;
+    }
 
+    label {
+        color: var(--primary-color);
+        font-size: 1.1rem;
+        margin:20px 0 5px ;
+    }
+
+    input, textarea {
+        padding: 10px;
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+    }
+    .btn-enviar {
+        margin: 20px 0;
+        padding: 12px 0;
+        width: 50%;
+        align-self: center;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: var(--terceary-color);
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    /* MAIN-FOOTER */
+    .container-footer {
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-footer img{
+        width: 200px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes h3{
+        color: var(--terceary-color);
+    }
+    .redes-iconos img{
+        width: 30px;
+        margin: 0 10px;
+    }
+
+    .contacto-footer h3 {
+        color: var(--terceary-color);
+        margin-top: 20px;
+    }
+    .contacto-footer p {
+        color: var(--terceary-color);
+    }
+    .copyright p{
+        color:var(--terceary-color) ;
+        margin-top: 40px;
+    }
+
+    .wppFixed {
+        background-color: #4ecc5c;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        position: fixed;
+        bottom: 1.5em;
+        right: 2em;
+    }
+    
 
 
 

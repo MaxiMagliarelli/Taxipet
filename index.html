@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transporte de mascotas. Traslado de mascotas. Pets.">
+    <meta name="author" content="Maximiliano Magliarelli">
+    <meta name="copyright" content="TaxiPet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="stylesheet" href="/css/style.css">
     <script defer src="/js/app.js"></script>
     <title>TaxiPet</title>
@@ -29,15 +35,15 @@
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section id="inicio" class="banner">
             <div class="text-banner">
                 <h1>Llevá a tu mascota a todos lados</h1>
-                <p> Servicio de traslado de perros y gatos</p>
+                <p> Servicio de traslado para perros y gatos</p>
             </div>
         </section>
         <section id="nosotros" class="container-nosotros">
             <h2>¿Quienes somos?</h2>
-            <p><strong>TAXIPET</strong> es la primera empresa Argentina en brindar servicios de traslado de mascota a nivel nacional de una forma rápida, sencilla y segura a través de nuestros conductores calificados y rankeados 
+            <p><strong>TAXIPET</strong> es la primera empresa Argentina en brindar servicios de traslado de mascotas a nivel nacional de una forma rápida, sencilla y segura a través de nuestros conductores calificados y rankeados 
                 por nuestros clientes.
                 <br>Sabemos el lugar que ocupan las mascotas en nuestros corazones, por eso nuestra misión es asegurarles un viaje placentero, sin que sienta la ausencia de su dueños.<br>    
             </p>
@@ -57,7 +63,7 @@
             <div class="card">
                 <img src="/assets/reservar-viaje.jpg" alt="conductor mascota">
                 <h3> Reservar un transporte</h3>
-                <p>Con nuestra App podrás reservar un transporte en la fecha y hora  que necesites.
+                <p>Con nuestra App podrás reservar un transporte en la fecha y hora que necesites.
                     Coordinas con el conductor y listo!</p>
             </div>
             <div class="card">
@@ -69,6 +75,7 @@
             </div>
         </section>
         <section class="container-comentarios">
+            <h2>Clientes felices</h2>
             <div class="comentario">
                 <i>
                     "La app funciona muy bien! Los conductores son muy atentos 
@@ -108,6 +115,57 @@
                 </p>
             </div>
         </section>
+        <div class="separador">
+        </div>
+        <section class="container-descarga">
+            <h3>Ya podes descargar nuestra App en</h3>
+            <div class="flex-container">
+                <div class="store">
+                    <a href="#"><img src="/assets/play-store.png" alt=""></a>
+                </div>
+                <div class="store">
+                    <a href="#"><img src="/assets/app-store.png" alt=""></a>
+                </div>
+            </div>    
+        </section>
+        <section id="contacto" class="container-contacto">
+            <h2>Dejanos tu consulta y nos contactaremos con vos</h2>
+            <form action="https://formsubmit.co/maximilianomagliarelli@gmail.com" method="POST">
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Teléfono">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Dejanos tu mensaje"></textarea>
+                    <input class="btn-enviar" type="submit" value="Enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </section>
     </main>
+    <footer class="container-footer">
+        <div class="img-footer">
+            <img src="/assets/logo.png" alt="">
+        </div>
+        <div class="redes">
+            <h3>nuestras redes</h3>
+            <div class="redes-iconos">
+                <a href="#"><img src="/assets/instagram.png" alt="logo instragram"></a>
+                <a href="#"><img src="/assets/facebook.png" alt="logo facebook"></a>
+                <a href="#"><img src="/assets/twitter.png" alt="logo twitter"></a>
+            </div>
+        </div>
+        <div class="contacto-footer">
+            <h3>contacto</h3>
+            <p>info@taxipet.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy;TAXIPET. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
