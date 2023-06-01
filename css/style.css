@@ -250,7 +250,7 @@ strong {
     /* MAIN - SEPARADOR */
 
     .separador {
-        background-image: url(/assets/separador.png);
+        background-image: url(../assets/separador.png);
         background-attachment: fixed;
         background-size:cover;
         background-repeat: no-repeat;
@@ -350,20 +350,8 @@ strong {
     }
     .copyright p{
         color:var(--terceary-color) ;
-        margin-top: 40px;
+        margin: 40px;
     }
-
-    .wppFixed {
-        background-color: #4ecc5c;
-        border-radius: 50%;
-        width: 3em;
-        height: 3em;
-        position: fixed;
-        bottom: 1.5em;
-        right: 2em;
-    }
-    
-
 
 
 
