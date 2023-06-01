@@ -135,7 +135,7 @@ strong {
 
     /* MAIN - BANNER */
     .banner {
-        background-image: url(/assets/banner.webp);
+        background-image: url(../assets/banner.webp);
         background-position-y: 80px;
         height: 40vh;
         background-size:cover;
